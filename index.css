@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background: #00514b;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:100px auto;
+    grid-auto-rows: auto;
+}
+#left #right{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left{
+    padding: 70px;
+    word-spacing: 5px;
+     font-family: "BBH Hegarty", sans-serif;
+}
+img{
+    width: 500px;
+    height: 470px;
+    border-radius: 27% 73% 40% 60% / 60% 48% 52% 40% ;
+}
+#nav{
+    padding: 10px 80px;
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2rem;
+    font-family: "BBH Hegarty", sans-serif;
+    cursor: pointer;
+}
+p{
+    text-shadow: 2px 2px black;
+    color: #FCB53B;
+    letter-spacing: 2px;
+}
+.it-cont{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+.it-cont li a{
+    position: relative;
+    font-family: "Momo Trust Display", sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    transition: 0.5s all ease;
+}
+a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: #f79a19;
+    transition: all 0.3s ease;
+}
+.it-cont li a:hover{
+    color: #f79a19;
+}
+.it-cont li a:hover::after{
+    width: 100%;
+}
+.hi{
+    line-height: 1.5;
+    font-size: 2rem;
+    color: #f79a19;
+}
+.text{
+    font-size: 1.5rem;
+    font-weight: 200;
+    word-spacing: 4px;
+    color: white;
+}
+svg{
+    fill: #ffffff;
+    cursor: pointer;
+    width: 30px;
+    display: none;
+    height: 30px;
+    margin: 10px;
+}
+svg:hover{
+    fill: #f79a19;
+}
+.sidebar{
+    backdrop-filter:blur(30px);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    z-index: 999;
+    background-color: #0000004d;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    list-style: none;
+    width: 100%;
+    padding:10px 30px;
+    transform: all 0.2s ease;
+}
+.sidebar li a{
+    font-family: "Momo Trust Display", sans-serif;
+    position: relative;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    width: 100%;
+}
+.sidebar li a:hover{
+    color: #f79a19;
+}
+.sidebar li a:hover::after{
+    width: 100%;
+}
+  @media (max-width:650px){
+            .item{
+                display: none;
+            }
+            #left #right{
+                flex: 1;
+                width: 100%;
+            }
+            svg{
+                display: block;
+            }
+            .sidebar{
+                width: 100%;
+            }
+            #nav{
+                grid-column: span 1;
+            }
+            .container{
+                grid-template-columns: 1fr;
+            }
+        }
