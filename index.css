@@ -23,15 +23,16 @@ body{
 #left, #right{
     flex-basis: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+         font-family: "BBH Hegarty", sans-serif;
 }
 #left{
-    display: flex;
-    flex-direction: column;
+
     padding: 70px;
     word-spacing: 5px;
-     font-family: "BBH Hegarty", sans-serif;
+
 }
 img{
     width: 500px;
@@ -62,7 +63,7 @@ p{
     gap: 3rem;
     list-style: none;
 }
-.it-cont li a{
+a{
     position: relative;
     font-family: "Momo Trust Display", sans-serif;
     text-decoration: none;
@@ -80,10 +81,10 @@ a::after{
     background: #f79a19;
     transition: all 0.3s ease;
 }
-.it-cont li a:hover{
+a:hover{
     color: #f79a19;
 }
-.it-cont li a:hover::after{
+a:hover::after{
     width: 100%;
 }
 .hi{
@@ -155,6 +156,7 @@ svg:hover{
     }
     .sidebar{
         width: 100%;
+        height: 100vh;
     }
 
     #left, #right{
@@ -262,5 +264,3 @@ button:hover{
     color: #f79a19;
     background: white;
 }
-
-
