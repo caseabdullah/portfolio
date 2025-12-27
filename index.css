@@ -36,6 +36,7 @@ img{
     width: 500px;
     height: 470px;
     border-radius: 27% 73% 40% 60% / 60% 48% 52% 40% ;
+    border: 1px solid white;
 }
 #nav{
     padding: 10px 80px;
@@ -151,6 +152,9 @@ svg:hover{
         grid-template-columns: 1fr;
         text-align: center;
     }
+    .sidebar{
+        width: 100%;
+    }
 
     #left, #right{
         justify-content: center;
@@ -171,3 +175,4 @@ svg:hover{
                 display: none;
             }
 }
+
