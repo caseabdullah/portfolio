@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap');
 
 *{
     margin: 0;
@@ -142,7 +143,7 @@ svg:hover{
 .sidebar li a:hover::after{
     width: 100%;
 }
-         @media (max-width:650px){
+         @media (max-width:850px){
                         svg{
                 display: block;
             }
@@ -174,5 +175,33 @@ svg:hover{
     .item{
                 display: none;
             }
+}
+.edu{
+    padding: 30px;
+    line-height: 1.5;
+    text-decoration: underline;
+    font-size: 2rem;
+    color: #f79a19;
+}
+.edu-p{
+    padding: 10px;
+    text-align: left;
+    font-size: 1.3rem;
+    word-spacing: 7px;
+    letter-spacing: 1.3px;
+    line-height: 1.4;
+    color: #ffffff;
+}
+b{
+    color: #DE802B;
+}
+.edu-li{
+    padding: 10px;
+    text-align: left;
+    font-size: 1.3rem;
+    word-spacing: 7px;
+    letter-spacing: 1px;
+    line-height: 1;
+    color:white;
 }
 
